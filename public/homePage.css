@@ -1,0 +1,56 @@
+    .intro {
+        font-size: xxx-large;
+    }
+
+    .pageContainer {
+        display: grid;
+        justify-items: center;
+    }
+
+    .letsTalkTitle {
+        color: #4f4fee;
+    }
+
+    .copyTitle {
+        font-weight: lighter;
+        font-size: xx-large;
+    }
+
+    .choicesContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5rem;
+    }
+
+    .btn {
+        border: 0;
+        padding: 50px 50px;
+        border-radius: 25%;
+        color: white;
+        cursor: pointer;
+        font-size: xx-large;
+    }
+
+
+    .newRoomBtn {
+        background-color: tomato;
+    }
+
+    .newRoomLink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .joinRoomBtn {
+        background-color: blue;
+    }
+
+    #joinRoomForm {
+        display: none;
+    }
+
+    .submitRoomLinkBtn {
+        font-size: small;
+        padding: 5px;
+        background-color: red;
+    }

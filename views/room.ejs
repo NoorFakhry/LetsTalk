@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link rel="stylesheet" href="/room.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-peer/9.11.0/simplepeer.min.js"></script>
+    <script>
+        const roomID = '<%= roomID %>'
+    </script>
+</head>
+<body>
+    <div class="roomAreaContainer">
+        <div id="copyUrl">
+            <button class="btn">Copy room link</button>
+        </div>
+        <div id="chatArea">
+            <div id="writeMessageForm">
+                <textarea id="textInput" placeholder="Type message..."></textarea>
+                <button id="sendMsg" class="btn">Send</button>
+            </div>
+            <div id="chatMessages"></div>
+        </div>
+        <div id="videosGrid"></div>
+        <div id="localVideo"></div>
+    </div>
+
+    <script src="/room.js"></script>
+</body>
+</html>

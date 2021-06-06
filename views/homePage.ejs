@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets talk</title>
+    <link rel="stylesheet" href="/homePage.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="pageContainer">
+        <h1 class="intro">Welcome to <span class="letsTalkTitle">Let's Talk</span> Rooms</h1>
+        <h5 class="copyTitle">Talk to your friends and family in a private room</h5>
+        <div class="choicesContainer">
+            <button class="btn newRoomBtn">
+                <a class="newRoomLink" href="http://localhost:8000/createNewRoom">New Room</a>
+            </button>
+            <div id="joinRoomContainer">
+                <button class="btn joinRoomBtn" id="joinRoomBtn">Join Room</button>
+            </div>
+            <div id="joinRoomForm">
+                <input id="joinRoomInput" type="text" class="joinRoomInput" placeholder="Enter room link">
+                <button id="submitJoinRoomBtn" class="btn submitRoomLinkBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="/homePage.js"></script>
+</body>
+</html>
